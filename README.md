@@ -1,3 +1,3 @@
 # login
-View a wonderful login form 
+Preview of a wonderful login page:
 ![Screenshot](sc.png)
