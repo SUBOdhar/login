@@ -15,3 +15,23 @@ function togglePasswordVisibility() {
     icon.setAttribute("name", "eye-outline");
   }
 }
+
+
+
+// for keyboard mapping
+   const usernameField = document.getElementById("username");
+   const passwordField = document.getElementById("password");
+
+   usernameField.addEventListener("keydown", (event) => {
+     if (event.key === "ArrowDown") {
+       event.preventDefault();
+       passwordField.focus();
+     }
+   });
+
+   passwordField.addEventListener("keydown", (event) => {
+     if (event.key === "ArrowUp") {
+       event.preventDefault();
+       usernameField.focus();
+     }
+   });

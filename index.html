@@ -17,11 +17,11 @@
         </div>
         <div class='form'>
             <form enctype="multipart/form-data">
-                <input type="text" placeholder='Username' class='text' id='username' autocomplete="off" required><br>
-                <input type="password" placeholder="Password" class="password" id="password">
-                <ion-icon class="toggle" id="toggle" name="eye-outline" onclick="togglePasswordVisibility()"></ion-icon>
+                <input type="text" placeholder='Username' class='text' id='username' autocomplete="off" required tabindex="1" autocomplete="username"><br>
+                <input type="password" placeholder="Password" class="password" id="password" autocomplete="current-password" tabindex="2">
+                <ion-icon class="toggle" id="toggle" name="eye-outline" onclick="togglePasswordVisibility()" tabindex="3"></ion-icon>
                 <br>
-                <a href="#" class='btn-login' id='do-login'>Login</a>
+                <button class='btn-login' id='do-login' tabindex="4">Login</button>
             </form>
         </div>
     </section>
